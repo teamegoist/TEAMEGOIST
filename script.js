@@ -1,0 +1,1 @@
+const obs=new IntersectionObserver(es=>es.forEach((e,i)=>{if(e.isIntersecting)setTimeout(()=>e.target.classList.add("show"),i*90)}),{threshold:.15});document.querySelectorAll(".player").forEach(e=>obs.observe(e));
